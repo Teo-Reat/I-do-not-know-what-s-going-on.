@@ -2,7 +2,7 @@
   "name": "02.Sedona",
   "version": "1.0.0",
   "description": "Sedona project",
-  "main": "index.js",
+  "main": "js/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "grunt-contrib-less": "^1.4.1"
+    "grunt": "~1.0.2",
+    "grunt-contrib-less": "~1.4.1",
+    "grunt-contrib-watch": "~1.0.0"
   }
 }
