@@ -1,24 +1,15 @@
-/* Переменные */
-@body-bg-color: #83b692;    // green
-@text-color: #fff;          // white
-@button-bg-color: #f9627d;  // pink
-/* LESS CSS */
-body {
-  background: @body-bg-color;
-  color: @text-color;
-  font-family: sans-serif;
+.header-page_text-index {
+  background-image: url("../images/back-mobile.jpg");
+  position: relative;
+  background-repeat: no-repeat;
   text-align: center;
-}
-a:link, a:visited {
-  background: @button-bg-color;
-  color: @text-color;
-  display: inline-block;
-  padding: 10px 10px;
-  text-decoration: none;
-}
-a:hover {
-  background-color: desaturate(@button-bg-color, 50%);
-}
-a:active {
-  background-color: saturate(@button-bg-color, 50%);
+  height: 389px;
+  width: 320px;
+  .text-index_background {
+    margin-top: 90px;
+  }
+  .text-index_triangle {
+    position: absolute;
+    bottom: 0;
+  }
 }
