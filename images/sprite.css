@@ -1,0 +1,104 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+
+
+.icon-htmlacademy {
+  
+background-image: url(sprite.png);
+  
+background-position: -32px -37px;
+  
+width: 27px;
+  
+height: 34px;
+
+}
+
+
+.icon-icon-burger.svg {
+  
+background-image: url(sprite.png);
+  
+background-position: -39px 0px;
+  
+width: 40px;
+  
+height: 35px;
+
+}
+
+
+.icon-icon-facebook {
+  
+background-image: url(sprite.png);
+  
+background-position: -79px 0px;
+  
+width: 9px;
+  
+height: 18px;
+
+}
+
+.icon-icon-gift {
+  
+background-image: url(sprite.png);
+  
+background-position: 0px -37px;
+  
+width: 32px;
+  
+height: 38px;
+}
+
+
+.icon-icon-house {
+  
+background-image: url(sprite.png);
+  
+background-position: 0px 0px;
+  
+width: 39px;
+  
+height: 37px;
+}
+
+.icon-icon-twitter {
+  
+background-image: url(sprite.png);
+  
+background-position: -59px -51px;
+  
+width: 18px;
+  
+height: 14px;
+
+}
+
+
+.icon-icon-youtube {
+  background-image: url(sprite.png);
+  
+background-position: -59px -37px;
+  
+width: 20px;
+  
+height: 14px;
+
+}

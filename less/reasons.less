@@ -17,12 +17,153 @@
     span {
       color: #fff;
     }
-    p {
+    .reason-one_description {
       color: #fff;
     }
-    ul {
-      padding: 0;
+  }
+  .reason-list {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 60px;
+    li {
+      &:first-child {
+        position: relative;
+        &::before {
+          content: '';
+          background-image: url("../images/sprite.png");
+          position: absolute;
+          background-position: 0px 0px;
+          width: 39px;
+          height: 37px;
+          left: -55px;
+          top: -5px;
+        }
+      }
+      &:nth-child(2) {
+        position: relative;
+        &::before {
+          content: '';
+          background-image: url("../images/sprite.png");
+          position: absolute;
+          background-position: 0px -37px;
+          width: 31px;
+          height: 38px;
+          left: -50px;
+          top: -12px;
+        }
+      }
+      &:last-child {
+        position: relative;
+        &::before {
+          content: '';
+          background-image: url("../images/sprite.png");
+          position: absolute;
+          background-position: -39px 0px;
+          width: 40px;
+          height: 35px;
+          left: -55px;
+          top: -5px;
+        }
+      }
+    }
+  }
+  .reasons-wrapper {
+    background: #81b3d2;
+    color: #fff;
+    p {
+      padding: 0 0 20px 0;
       margin: 0;
     }
+  }
+  .reasons-wrapper_three-item {
+    background: #eee;
+    h3 {
+      margin: 0;
+      padding-top: 20px;
+    }
+    p {
+      padding: 25px 0 30px 0;
+      margin: 0;
+    }
+  }
+  .image-bridge {
+    vertical-align: bottom;
+  }
+  .reason-two_h3 {
+    padding-top: 40px;
+  }
+}
+.main-page_contacts {
+  .contacts_find-us {
+    span {
+      display: block;
+      margin: 0;
+      padding-top: 30px;
+      font-size: 20px;
+      font-weight: bolder;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  .find-us_order {
+    padding: 28px 0 40px;
+  }
+  .find-us_find-hotel {
+    width: 280px;
+    height: 58px;
+    background: #81b3d2;
+    color: #fff;
+    border: none;
+    margin-bottom: 50px;
+  }
+}
+
+.contacts_social-networks {
+  .social-networks_hashtag {
+    font-weight: bolder;
+    margin-top: 35px;
+    display: block;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    display: block;
+    width: 45px;
+    height: 48px;
+    background: #81b3d2;
+    position: relative;
+    font-size: 0px;
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url("../images/sprite.png");
+    }
+  }
+  .facebook::before {
+    background-position: -79px 0;
+    top: 14px;
+    left: 17px;
+    width: 9px;
+    height: 18px;
+  }
+  .twitter::before {
+    background-position: -59px -51px;
+    top: 17px;
+    left: 13px;
+    width: 18px;
+    height: 14px;
+  }
+  .youtube::before {
+    background-position: -59px -37px;
+    top: 18px;
+    left: 12px;
+    width: 20px;
+    height: 14px;
   }
 }
