@@ -15,10 +15,11 @@ module.exports = function(grunt) {
         },
         // running `grunt watch` will watch for changes
         watch: {
-            files: "./less/*.less",
+            files: "./less/**/*.less",
             tasks: ["less"]
         }
     });
+    grunt.registerTask('run', ['less','watch']);
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
 };

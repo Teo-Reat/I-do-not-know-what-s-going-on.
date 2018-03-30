@@ -4,10 +4,11 @@
   text-align: center;
   text-transform: uppercase;
   font-family: PT-Sans, Arial, sans-serif;
+  padding: 10px;
 }
 
 .text-index {
-  background-image: url("../images/back-mobile.jpg");
+  background: url("../images/back-mobile.jpg") no-repeat center center;
   position: relative;
   text-align: center;
   height: 389px;
@@ -16,17 +17,104 @@
   .text-index_background {
     margin-top: 90px;
   }
-  .text-index_triangle {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+
+  .text-index_welcome {
+    padding: 80px 0 0 0;
+    color: @blue1;
+    font: bold 32px Anton;
   }
-  ::before {
+
+  .text-index_gorgeous {
+    margin: -10px 0 0 0;
+    color: @brown1;
+    font: normal 20px Damion;
+    text-transform: lowercase;
+  }
+
+  .text-index_h1 {
+    margin: 0;
+    color: @white;
+    font: bold 4em Archivo;
+  }
+
+  .text-index_no-canyon {
+    color: @white;
+    font: normal 24px Damion;
+    text-transform: none;
+    width: 185px;
+    margin: 0 auto;
+  }
+  &::before {
     content: '';
-    background: url("../images/triangle.png");
+    background: url("../images/triangle.png") no-repeat center center;
     position: absolute;
     bottom: 0;
+    display: block;
+    height: 57px;
+    width: 100%;
   }
+}
+
+.reasons-block {
+  .about-sedona {
+    padding-top: 1.2em;
+    font-weight: bold;
+  }
+  .five-reasons {
+    margin: 40px 0 30px 0;
+    color: @grey4;
+    font: normal 0.8em PT-Sans;
+  }
+}
+
+.reason-one {
+  .reasons-wrapper {
+    background: @blue1;
+    position: relative;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      background: url("../images/triangle2.png") no-repeat center center;
+      width: 100%;
+      height: 37px;
+    }
+  }
+}
+
+.reason-one_h3 {
+  padding: 60px 0 18px 0;
+  color: @white;
+  font-size: 1.2em;
+}
+
+.reason_number {
+  color: @white;
+  font-size: 0.9em;
+}
+
+.reason-one_description {
+  color: @white;
+  font-size: 0.9em;
+  padding: 24px 0 45px 0;
+}
+
+.reason-list {
+  margin: 0;
+  text-align: left;
+  padding-left: 30px;
+  list-style-type: none;
+  &::before {
+    content: '';
+    background: #000;
+  }
+}
+
+.reason-list-item_h4 {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 40px 0 24px 0;
 }
 
 .contacts_find-us {

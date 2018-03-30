@@ -4,7 +4,7 @@
   "description": "Sedona project",
   "main": "js/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "grunt run"
   },
   "keywords": [],
   "author": "",
