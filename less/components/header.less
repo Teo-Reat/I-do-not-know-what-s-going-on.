@@ -1,9 +1,6 @@
-.header_page {
-  width: 320px;
+.header-page {
+  width: 100%;
   margin: 0 auto;
-  h1 {
-    font-size: 0;
-  }
 }
 
 .main-nav {
@@ -17,17 +14,17 @@
   }
 }
 
-.site-list_list-item {
-  background: #81b3d2;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #999;
+.list-item {
+  background: @blue1;
+  border-top: 1px solid @grey1;
+  border-bottom: 1px solid @grey2;
   text-align: center;
   list-style-type: none;
   a {
     padding: 20px 0;
     text-decoration: none;
     text-transform: uppercase;
-    color: white;
+    color: @white;
     font-family: PT-Sans, Arial, sans-serif;
     font-size: 18px;
     display: block;
@@ -35,39 +32,23 @@
   }
 }
 
-.main-nav_logo {
+.logo-nav {
   height: 56px;
   position: relative;
-  .main-nav_toggle {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    width: 32px;
-    height: 32px;
-    border: none;
-    background: transparent;
-    &::before {
-      content: url("../images/icon-menu.svg");
-      position: absolute;
-      top: 5px;
-      left: 5px;
-    }
-  }
 }
 
-.header-page_text-index {
-  background-image: url("../images/back-mobile.jpg");
-  position: relative;
-  text-align: center;
-  height: 389px;
-  width: 320px;
-  margin: 0 auto;
-  .text-index_background {
-    margin-top: 90px;
-  }
-  .text-index_triangle {
+.main-nav_toggle {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  &::before {
+    content: url("../images/icon-menu.svg");
     position: absolute;
-    bottom: 0;
-    left: 0;
+    top: 5px;
+    left: 5px;
   }
 }

@@ -1,13 +1,28 @@
 @import "_reset.less";
 @import "_fonts.less";
+@import "_colors.less";
+
+@screen-mobile-max: 799px;
+
+@screen-tablet-min: 800px;
+@screen-tablet-max: 1023px;
+
+@screen-lg-min: 1280px;
+
+
+@media-mobile: ~"(max-width: @{screen-mobile-max})";
+
+@media-tablet: ~"(min-width: @{screen-tablet-min}) and (max-width: @{screen-tablet-max})";
+
+@media-md: ~"(min-width: @{screen-tablet-min})";
 
 body {
   padding: 0;
   margin: 0;
 }
 
-.hidden {
-  visibility: hidden;
+.hidden-block {
+  display: none;
 }
 
 @import "components/header.less";
