@@ -9,7 +9,10 @@
 <header class="header-page">
     <nav class="main-nav">
         <ul class="hidden-block">
-            <li class="list-item active"><a>Главная</a></li>
+            <li class="list-item active">
+                <a>Главная</a>
+                <button class="menu-close"></button>
+            </li>
             <li class="list-item"><a href="photo.html">Фото и видео</a></li>
             <li class="list-item"><a href="form.html">Форма отзыва</a></li>
             <li class="list-item"><a href="#">HTML Academy</a></li>
@@ -38,22 +41,24 @@
                 <span class="reason_number">-№1-</span>
                 <p class="reason-one_description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <img src="images/city.jpg"/>
-            <ul class="reason-list">
-                <li class="reason-list_motel">
-                    <h4 class="reason-list-item_h4">Жилье</h4>
-                    <p class="reason-list-item_description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                </li>
-                <li class="reason-list_gift">
-                    <h4 class="reason-list-item_h4">Сувениры</h4>
-                    <p class="reason-list-item_description">Не только китайского, но и местного производства!</p>
-                </li>
-                <li class="reason-list_food">
-                    <h4 class="reason-list-item_h4">Еда</h4>
-                    <p class="reason-list-item_description">Всегда заказывайте фирменный бургер, вы не
-                        разочаруетесь!</p>
-                </li>
-            </ul>
+            <div class="city-jpg"></div>
+            <div class="reason-list_wrapper">
+                <ul class="reason-list">
+                    <li class="reason-list_item">
+                        <h4 class="list-item_h4 motel">Жилье</h4>
+                        <p class="list-item_description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                    </li>
+                    <li class="reason-list_item">
+                        <h4 class="list-item_h4 gift">Сувениры</h4>
+                        <p class="list-item_description">Не только китайского, но и местного производства!</p>
+                    </li>
+                    <li class="reason-list_item">
+                        <h4 class="list-item_h4 food">Еда</h4>
+                        <p class="list-item_description">Всегда заказывайте фирменный бургер, вы не
+                            разочаруетесь!</p>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="reason-two">
             <div class="reasons-wrapper">
@@ -61,25 +66,23 @@
                 <span class="reason_number">-№2-</span>
                 <p class="reason-two_description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <img src="images/bridge.jpg" class="image-bridge"/>
+            <div class="bridge-jpg"></div>
         </section>
-        <div class="reasons-wrapper_three-item">
-            <section class="reasons-block_reason-three">
+        <div class="reasons-wrapper_three">
+            <section class="reason-three">
                 <h3 class="reason-three_h3">Небольшая площадь</h3>
                 <span class="reason-three_number">-№3-</span>
                 <p class="reason-three_description">Все интересные места находятся очень близко</p>
             </section>
-            <hr/>
-            <section class="reasons-block_reason-four">
-                <h3 class="reason-four_h3">Красивая дорога</h3>
-                <span class="reason-four_number">-№4-</span>
-                <p class="reason-four_description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <section class="reason-four">
+                <h3 class="reason-three_h3">Красивая дорога</h3>
+                <span class="reason-three_number">-№4-</span>
+                <p class="reason-three_description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </section>
-            <hr/>
-            <section class="reasons-block_reason-five">
-                <h3 class="reason-five_h3">Мало туристов</h3>
-                <span class="reason-five_number">-№5-</span>
-                <p class="reason-five_description">Большинство едет в Гранд Каньон и толпится там</p>
+            <section class="reason-five">
+                <h3 class="reason-three_h3">Мало туристов</h3>
+                <span class="reason-three_number">-№5-</span>
+                <p class="reason-three_description">Большинство едет в Гранд Каньон и толпится там</p>
             </section>
         </div>
     </article>

@@ -4,7 +4,6 @@
   text-align: center;
   text-transform: uppercase;
   font-family: PT-Sans, Arial, sans-serif;
-  padding: 10px;
 }
 
 .text-index {
@@ -21,25 +20,25 @@
   .text-index_welcome {
     padding: 80px 0 0 0;
     color: @blue1;
-    font: bold 32px Anton;
+    font: bold 200% Anton;
   }
 
   .text-index_gorgeous {
     margin: -10px 0 0 0;
     color: @brown1;
-    font: normal 20px Damion;
+    font: normal 120% Damion;
     text-transform: lowercase;
   }
 
   .text-index_h1 {
     margin: 0;
     color: @white;
-    font: bold 4em Archivo;
+    font: bold 400% Archivo;
   }
 
   .text-index_no-canyon {
     color: @white;
-    font: normal 24px Damion;
+    font: normal 140% Damion;
     text-transform: none;
     width: 185px;
     margin: 0 auto;
@@ -57,13 +56,13 @@
 
 .reasons-block {
   .about-sedona {
-    padding-top: 1.2em;
+    padding-top: 43px;
     font-weight: bold;
   }
   .five-reasons {
     margin: 40px 0 30px 0;
     color: @grey4;
-    font: normal 0.8em PT-Sans;
+    font: normal 80% PT-Sans;
   }
 }
 
@@ -86,36 +85,114 @@
 .reason-one_h3 {
   padding: 60px 0 18px 0;
   color: @white;
-  font-size: 1.2em;
+  font-size: 120%;
 }
 
 .reason_number {
   color: @white;
-  font-size: 0.9em;
+  font-size: 90%;
 }
 
-.reason-one_description {
+.reason-one_description,
+.reason-two_description {
   color: @white;
-  font-size: 0.9em;
+  font-size: 90%;
   padding: 24px 0 45px 0;
+  margin: 0 auto;
+  width: 280px;
+}
+
+.city-jpg {
+  background: url("../images/city.jpg") no-repeat center center;
+  height: 260px;
+}
+
+.bridge-jpg {
+  background: url("../images/bridge.jpg") no-repeat center center;
+  height: 260px;
+}
+
+.reason-list_wrapper {
+  margin: 0 auto;
+  width: 280px;
 }
 
 .reason-list {
   margin: 0;
   text-align: left;
-  padding-left: 30px;
+  padding-left: 70px;
   list-style-type: none;
-  &::before {
+  .reason-list_item {
+    position: relative;
+  }
+  .list-item_h4 {
+    font-size: 120%;
+    font-weight: bold;
+    margin: 40px 0 24px 0;
+  }
+  .list-item_h4::before {
     content: '';
-    background: #000;
+    background: url("../images/sprite.png");
+    display: block;
+    position: absolute;
+    top: -10px;
+  }
+  .motel::before {
+    background-position: 0px 0px;
+    width: 39px;
+    height: 37px;
+    left: -50px;
+  }
+  .gift::before {
+    background-position: 0px -37px;
+    width: 32px;
+    height: 38px;
+    left: -45px;
+  }
+  .food::before {
+    background-position: -39px 0px;
+    width: 40px;
+    height: 35px;
+    left: -50px;
+  }
+  .list-item_description {
+    margin-bottom: 42px;
   }
 }
 
-.reason-list-item_h4 {
-  font-size: 1.2em;
-  font-weight: bold;
-  padding: 40px 0 24px 0;
+.reason-two {
+  .reasons-wrapper {
+    background: @blue1;
+  }
+  .reason-two_h3 {
+    color: @white;
+    padding: 45px 0 18px;
+    font-size: 120%;
+  }
 }
+
+.reasons-wrapper_three {
+  background: @grey0;
+  .reason-three_h3 {
+    padding: 30px 0 20px 0;
+  }
+
+  .reason-three_number {
+    color: @grey4
+  }
+
+  .reason-three_description {
+    padding: 25px 0 30px 0;
+    color: @grey4;
+  }
+
+  .reason-three,
+  .reason-four {
+    border-bottom: 1px solid @grey1;
+  }
+}
+
+
 
 .contacts_find-us {
   span {
