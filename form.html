@@ -3,8 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-
+<header class="header">
+    <nav class="main-nav">
+        <ul class="hidden-block">
+            <li class="list-item">
+                <a href="index.html">Главная</a>
+                <button class="menu-close"></button>
+            </li>
+            <li class="list-item"><a href="photo.html">Фото и видео</a></li>
+            <li class="list-item active"><a>Форма отзыва</a></li>
+            <li class="list-item"><a href="#">HTML Academy</a></li>
+        </ul>
+        <div class="logo-nav">
+            <div class="logo_div-svg">
+                <img src="images/logotype.png" class="logo-svg"/>
+            </div>
+            <button class="main-nav_toggle"></button>
+        </div>
+    </nav>
+</header>
+<main class="form-page">
+    <div class="text-index">
+        <h1 class="text-index_h1">Sedona</h1>
+    </div>
+    <article class="input-page">
+        <section class="form-request">
+            <p class="form-title">Оставьте свой отзыв</p>
+            <p class="form-description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных
+                вами достопримечательностях</p>
+        </section>
+        <section class="introduce">
+            <form method="post">
+                <p class="form-title">Представьтесь:</p>
+                <ul>
+                    <li><label>Имя*:
+                        <input type="text" name="name" class="form-login" required/>
+                    </label></li>
+                    <li><label>Фамилия*:
+                        <input type="text" name="surname" class="form-login" required/>
+                    </label></li>
+                    <li><label>Отчество:
+                        <input type="text" name="patronymic" class="form-login"/>
+                    </label></li>
+                </ul>
+            </form>
+        </section>
+        <section class="contact-info">
+            <p class="form-title">Контактная информация:</p>
+            <form method="post">
+                <ul>
+                    <li><label>Контактный телефон*:
+                        <input type="number" name="telephone" class="form-telephone" required/>
+                    </label></li>
+                    <li><label>Электронная почта*:
+                        <input type="email" name="email" class="form-email" required/>
+                    </label></li>
+                </ul>
+            </form>
+        </section>
+        <section class="impression">
+            <p class="form-title">Ваше общее впечатление:</p>
+            <form method="post">
+                <ul>
+                    <li><label>Скорее положительное
+                        <input type="radio" name="radio-impression" class="form-impression"/>
+                    </label></li>
+                    <li><label>Скорее отрицательное
+                        <input type="radio" name="radio-impression" class="form-impression"/>
+                    </label></li>
+                    <li><label>Затрудняюсь ответить
+                        <input type="radio" name="radio-impression" class="form-impression"/>
+                    </label></li>
+                </ul>
+            </form>
+        </section>
+        <section class="attraction">
+            <p class="form-title">Посещенные достопримечательности</p>
+            <form method="post">
+                <ul>
+                    <li><label>Мост Дьявола
+                        <input type="checkbox" name="checkbox-bridge" class="form-attraction"/>
+                    </label></li>
+                    <li><label>Слайд-парк
+                        <input type="checkbox" name="checkbox-park" class="form-attraction"/>
+                    </label></li>
+                    <li><label>Гора-Колокол
+                        <input type="checkbox" name="checkbox-mountain" class="form-attraction"/>
+                    </label></li>
+                    <li><label>Красные скалы
+                        <input type="checkbox" name="checkbox-cliffs" class="form-attraction"/>
+                    </label></li>
+                </ul>
+            </form>
+        </section>
+        <section class="emotions">
+            <p class="form-title">Опишите свои эмоции:</p>
+            <form method="post">
+                <input type="textarea" name="textarea-description" class="form-emotions">
+            </form>
+        </section>
+        <input type="submit" name="form-submit" class="submit-blue" value="Отправить отзыв"/>
+    </article>
+</main>
+<footer class="social-networks">
+    <span class="hashtag">#visitsedona</span>
+    <ul class="social-networks-list">
+        <li class="social-item">
+            <a href="#" class="icon twitter">twitter</a>
+        </li>
+        <li class="social-item">
+            <a href="#" class="icon facebook">facebook</a>
+        </li>
+        <li class="social-item">
+            <a href="#" class="icon youtube">youtube</a>
+        </li>
+    </ul>
+    <div class="html-academy"><a href="#">Разработано</a></div>
+</footer>
+<script src="js/index.js"></script>
 </body>
 </html>
