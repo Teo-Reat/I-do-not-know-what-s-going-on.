@@ -38,65 +38,76 @@
         <section class="introduce">
             <form method="post">
                 <p class="form-title">Представьтесь:</p>
-                <ul>
-                    <li><label>Имя*:
-                        <input type="text" name="name" class="form-login" required/>
-                    </label></li>
-                    <li><label>Фамилия*:
-                        <input type="text" name="surname" class="form-login" required/>
-                    </label></li>
-                    <li><label>Отчество:
-                        <input type="text" name="patronymic" class="form-login"/>
-                    </label></li>
-                </ul>
+                <label class="introduce-flex">
+                    <div class="introduce-label">Имя*:</div>
+                    <input type="text" name="name" class="form-login" required/>
+                </label>
+                <label class="introduce-flex">
+                    <div class="introduce-label">Фамилия*:</div>
+                    <input type="text" name="surname" class="form-login" required/>
+                </label>
+                <label class="introduce-flex">
+                    <div class="introduce-label">Отчество:</div>
+                    <input type="text" name="patronymic" class="form-login"/>
+                </label>
             </form>
         </section>
         <section class="contact-info">
             <p class="form-title">Контактная информация:</p>
             <form method="post">
-                <ul>
-                    <li><label>Контактный телефон*:
-                        <input type="number" name="telephone" class="form-telephone" required/>
-                    </label></li>
-                    <li><label>Электронная почта*:
-                        <input type="email" name="email" class="form-email" required/>
-                    </label></li>
-                </ul>
+                <label>
+                    <div class="contact-info_label">Контактный телефон*:</div>
+                    <input type="text" name="telephone" class="form-telephone" placeholder="Введите телефон" required/>
+                </label>
+                <label>
+                    <div class="contact-info_label">Электронная почта*:</div>
+                    <input type="email" name="email" class="form-email" placeholder="Введите e-mail" required/>
+                </label>
             </form>
         </section>
         <section class="impression">
             <p class="form-title">Ваше общее впечатление:</p>
             <form method="post">
-                <ul>
-                    <li><label>Скорее положительное
-                        <input type="radio" name="radio-impression" class="form-impression"/>
-                    </label></li>
-                    <li><label>Скорее отрицательное
-                        <input type="radio" name="radio-impression" class="form-impression"/>
-                    </label></li>
-                    <li><label>Затрудняюсь ответить
-                        <input type="radio" name="radio-impression" class="form-impression"/>
-                    </label></li>
-                </ul>
+                <label>
+                    <input type="radio" name="radio-impression" class="form-impression"/>
+                    <span class="custom-radio"></span>
+                    <span class="label">Скорее положительное</span>
+                </label>
+                <label>
+                    <input type="radio" name="radio-impression" class="form-impression"/>
+                    <span class="custom-radio"></span>
+                    <span class="label">Скорее отрицательное</span>
+                </label>
+                <label>
+                    <input type="radio" name="radio-impression" class="form-impression"/>
+                    <span class="custom-radio"></span>
+                    <span class="label">Затрудняюсь ответить</span>
+                </label>
             </form>
         </section>
         <section class="attraction">
             <p class="form-title">Посещенные достопримечательности</p>
             <form method="post">
-                <ul>
-                    <li><label>Мост Дьявола
-                        <input type="checkbox" name="checkbox-bridge" class="form-attraction"/>
-                    </label></li>
-                    <li><label>Слайд-парк
-                        <input type="checkbox" name="checkbox-park" class="form-attraction"/>
-                    </label></li>
-                    <li><label>Гора-Колокол
-                        <input type="checkbox" name="checkbox-mountain" class="form-attraction"/>
-                    </label></li>
-                    <li><label>Красные скалы
-                        <input type="checkbox" name="checkbox-cliffs" class="form-attraction"/>
-                    </label></li>
-                </ul>
+                <label>
+                    <input type="checkbox" name="checkbox-bridge" class="form-attraction"/>
+                    <span class="custom-checkbox"></span>
+                    <span class="label">Мост Дьявола</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="checkbox-park" class="form-attraction"/>
+                    <span class="custom-checkbox"></span>
+                    <span class="label">Слайд-парк</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="checkbox-mountain" class="form-attraction"/>
+                    <span class="custom-checkbox"></span>
+                    <span class="label">Гора-Колокол</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="checkbox-cliffs" class="form-attraction"/>
+                    <span class="custom-checkbox"></span>
+                    <span class="label">Красные скалы</span>
+                </label>
             </form>
         </section>
         <section class="emotions">
