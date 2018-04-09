@@ -30,6 +30,12 @@
   }
 }
 
+.form-request {
+  .form-title {
+    padding-top: 44px;
+  }
+}
+
 //Блок "Представьтесь"
 .introduce {
   .introduce-flex {
@@ -60,10 +66,20 @@
 
 //Блок "Контактная информация"
 .contact-info {
-  ::-webkit-input-placeholder { color: @black; }
-  ::-moz-placeholder          { color: @black; } /* Firefox 19+ */
-  :-moz-placeholder           { color: @black; } /* Firefox 18- */
-  :-ms-input-placeholder      { color: @black; }
+  ::-webkit-input-placeholder {
+    color: @black;
+  }
+  ::-moz-placeholder {
+    color: @black;
+  }
+  /* Firefox 19+ */
+  :-moz-placeholder {
+    color: @black;
+  }
+  /* Firefox 18- */
+  :-ms-input-placeholder {
+    color: @black;
+  }
   .contact-info_label {
     padding-right: 14px;
     font-size: @font-normal;
@@ -72,22 +88,46 @@
   }
   .form-telephone,
   .form-email {
-    width: 218px;
+    width: 222px;
     height: 58px;
-    border: none;
+    border: 2px solid @grey-1;
     background: @grey-1;
-    padding: 0 60px 0 22px;
-    margin: 14px 0 22px;
+    padding: 0 54px 0 20px;
+    margin: 12px 0 20px;
     font-size: @font-normal;
     font-weight: bold;
     background-repeat: no-repeat;
-    background-position: 242px;
+    background-position: 238px;
+    &:hover {
+      background: @grey1;
+      background-repeat: no-repeat;
+      background-position: 238px;
+      border: 2px solid @grey1;
+    }
+    &:focus {
+      background: @white;
+      background-repeat: no-repeat;
+      background-position: 238px;
+      border: 2px solid @grey1;
+    }
   }
   .form-telephone {
     background-image: url(../images/phone.png);
+    &:hover {
+      background-image: url(../images/phone.png);
+    }
+    &:focus {
+      background-image: url(../images/phone.png);
+    }
   }
   .form-email {
     background-image: url(../images/mail.png);
+    &:hover {
+      background-image: url(../images/mail.png);
+    }
+    &:focus {
+      background-image: url(../images/mail.png);
+    }
   }
 }
 
@@ -170,11 +210,22 @@
 
 //Блок "Опишите свои эмоции"
 .emotions {
+  textarea:-moz-placeholder {
+    color: @black;
+  }
+  textarea::-webkit-input-placeholder {
+    color: @black;
+  }
   .form-emotions {
     width: 260px;
     height: 160px;
     border: none;
     background: @grey-1;
     padding: 20px;
+    vertical-align: top;
+    resize: none;
+    font-size: 140%;
+    color: @grey4;
+    font-weight: bold;
   }
 }
