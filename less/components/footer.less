@@ -76,3 +76,24 @@
     }
   }
 }
+
+@media (min-width: 800px) {
+  .social-networks {
+    display: flex;
+    justify-content: space-around;
+    vertical-align: top;
+    margin-bottom: 36px;
+    .hashtag {
+      margin-top: 30px;
+    }
+  }
+  .html-academy {
+    margin: 30px 0 0;
+    padding: 0;
+    a {
+      &::before {
+        top: 0;
+      }
+    }
+  }
+}
